@@ -31,7 +31,7 @@ jobs:
     - name: Run Linter
       run: |
         pwd
-        find . -name "*.py" -not -path "*/migrations/*" -not -path "*/djangoenv/*" -not -path "*/venv/*" -not -path "*/.venv/*" -exec flake8 {} +
+        find . -name "*.py" -not -path "*/migrations/*" -not -path "*/djangoenv/*" -not -path "*/venv/*" -not -path "*/.venv/*" -not -path "*/node_modules/*" -exec flake8 {} +
         echo "Linted all the python files successfully"
 
   lint_js:
